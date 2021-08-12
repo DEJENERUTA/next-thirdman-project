@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p {
+	padding-bottom: 1em;
+	line-height: 1.4;
+}
+img {
+	width: 100%;
+	height: auto;
+	border: solid 1px #666;
+}
+.street img {
+	border: none;
+}
+body {
+	background-color: #000;
+	color: #fff;
+}
+#wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	border-left: solid 1px #666;
+	border-right: solid 1px #666;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+		"sans-serif";
+}
+h1 {
+	font-size: 4em;
+}
+h2 {
+	padding: 5px;
+}
+.heading-center {
+	max-width: 33.33333%;
+	position: absolute;
+	left: 500px;
+	bottom: 30%;
+}
+
+nav ul {
+	grid-template-columns: repeat(6, 1fr);
+	list-style: none;
+	padding: 10px;
+	right: 0;
+	left: 0;
+}
+nav ul li {
+	place-self: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+nav ul li a {
+	text-decoration: none;
+}
+nav ul,
+.container1,
+.container2,
+.container3,
+.container4 {
+	display: grid;
+}
+.container1 {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1 auto;
+	align-items: end;
+	grid-gap: 1%;
+}
+section {
+	margin: 0 1% 4em;
+}
+.container2 {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1 auto;
+	grid-gap: 1%;
+}
+.container3 {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1 auto;
+	align-items: end;
+	grid-gap: 1%;
+}
+.container4 {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1 auto;
+	grid-gap: 1%;
+}
